@@ -39,6 +39,7 @@ class VideoCell: UICollectionViewCell {
         textView.text = "TaylorSwiftVEVO • 1,604,684,607 views • 2 years ago"
         textView.textContainerInset = UIEdgeInsetsMake(0, -4, 0, 0)
         textView.textColor = .lightGray
+        textView.isEditable = false
         return textView
     }()
     
