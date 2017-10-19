@@ -83,8 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				8F51367E1F992B5400ADB823 /* HomeController.swift */,
-				8F5136951F9930CE00ADB823 /* VideoCell.swift */,
-				8F51369A1F99363500ADB823 /* VideoCellMetrics.swift */,
+				8F51369E1F99534600ADB823 /* Video cells */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -121,6 +120,15 @@
 				8F51369C1F99492A00ADB823 /* UIColor+Extensions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8F51369E1F99534600ADB823 /* Video cells */ = {
+			isa = PBXGroup;
+			children = (
+				8F5136951F9930CE00ADB823 /* VideoCell.swift */,
+				8F51369A1F99363500ADB823 /* VideoCellMetrics.swift */,
+			);
+			path = "Video cells";
 			sourceTree = "<group>";
 		};
 		A48CE2F413A0822D9C4AF9F5 /* Pods */ = {
