@@ -17,7 +17,16 @@ class HomeController: UICollectionViewController {
     }
     
     private func setupViews() {
-        navigationItem.title = "Home"
+        setupNavigationBar()
+    }
+    
+    private func setupNavigationBar() {
+        navigationController?.navigationBar.isTranslucent = false
+        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 20, height: view.frame.height))
+        titleLabel.text = "Home"
+        titleLabel.textColor = .white
+        titleLabel.font = .systemFont(ofSize: 20)
+        navigationItem.titleView = titleLabel
     }
     
     private func registerCells() {

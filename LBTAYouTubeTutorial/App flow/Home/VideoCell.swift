@@ -44,7 +44,7 @@ class VideoCell: UICollectionViewCell {
     
     let separatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = .separatorLineGray
+        view.backgroundColor = .graySeparatorLine
         return view
     }()
     

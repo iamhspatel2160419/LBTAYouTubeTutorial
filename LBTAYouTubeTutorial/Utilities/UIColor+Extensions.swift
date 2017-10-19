@@ -9,5 +9,15 @@
 import UIKit
 
 extension UIColor {
-    static let separatorLineGray = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
+    static let graySeparatorLine = UIColor(red: 230, green: 230, blue: 230)
+    static let redNavigationBar = UIColor(red: 230, green: 32, blue: 31)
+    static let redStatusBar = UIColor(red: 194, green: 31, blue: 31)
+    
+    // https://medium.com/ios-os-x-development/ios-extend-uicolor-with-custom-colors-93366ae148e6
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
 }
