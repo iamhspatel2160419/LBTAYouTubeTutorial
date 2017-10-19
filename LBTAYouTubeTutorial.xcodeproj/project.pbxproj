@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4EEE3C35A31EFE3B37CE64 /* Pods_LBTAYouTubeTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CECCA6AB17498DF9BED13F /* Pods_LBTAYouTubeTutorial.framework */; };
 		8F51367D1F992B5400ADB823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51367C1F992B5400ADB823 /* AppDelegate.swift */; };
 		8F51367F1F992B5400ADB823 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51367E1F992B5400ADB823 /* HomeController.swift */; };
 		8F5136841F992B5400ADB823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5136831F992B5400ADB823 /* Assets.xcassets */; };
 		8F5136871F992B5400ADB823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5136851F992B5400ADB823 /* LaunchScreen.storyboard */; };
+		8F5136931F992FC000ADB823 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F5136881F992B5500ADB823 /* Info.plist */; };
+		8F5136961F9930CE00ADB823 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5136951F9930CE00ADB823 /* VideoCell.swift */; };
+		8F5136991F99314700ADB823 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5136981F99314700ADB823 /* UICollectionViewCell+Extensions.swift */; };
+		8F51369B1F99363500ADB823 /* VideoCellMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51369A1F99363500ADB823 /* VideoCellMetrics.swift */; };
+		8F51369D1F99492A00ADB823 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51369C1F99492A00ADB823 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D40FC7264F2DCA3DBB01963 /* Pods-LBTAYouTubeTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTAYouTubeTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBTAYouTubeTutorial/Pods-LBTAYouTubeTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		3D06924254FDFA6AEAE9E1B6 /* Pods-LBTAYouTubeTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTAYouTubeTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBTAYouTubeTutorial/Pods-LBTAYouTubeTutorial.release.xcconfig"; sourceTree = "<group>"; };
+		58CECCA6AB17498DF9BED13F /* Pods_LBTAYouTubeTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBTAYouTubeTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5136791F992B5400ADB823 /* LBTAYouTubeTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBTAYouTubeTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F51367C1F992B5400ADB823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F51367E1F992B5400ADB823 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -21,6 +30,10 @@
 		8F5136861F992B5400ADB823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F5136881F992B5500ADB823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F51368E1F992C0E00ADB823 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8F5136951F9930CE00ADB823 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		8F5136981F99314700ADB823 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		8F51369A1F99363500ADB823 /* VideoCellMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCellMetrics.swift; sourceTree = "<group>"; };
+		8F51369C1F99492A00ADB823 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4EEE3C35A31EFE3B37CE64 /* Pods_LBTAYouTubeTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,8 +53,9 @@
 			children = (
 				8F51368E1F992C0E00ADB823 /* README.md */,
 				8F51367B1F992B5400ADB823 /* LBTAYouTubeTutorial */,
-				8F5136911F992E3400ADB823 /* Supporting files */,
 				8F51367A1F992B5400ADB823 /* Products */,
+				A48CE2F413A0822D9C4AF9F5 /* Pods */,
+				C6FD11351A6BBBE1BF822E65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +72,9 @@
 			children = (
 				8F51367C1F992B5400ADB823 /* AppDelegate.swift */,
 				8F5136901F992E2B00ADB823 /* App flow */,
+				8F5136971F99312C00ADB823 /* Utilities */,
 				8F5136921F992E3F00ADB823 /* Resources */,
+				8F5136911F992E3400ADB823 /* Supporting files */,
 			);
 			path = LBTAYouTubeTutorial;
 			sourceTree = "<group>";
@@ -66,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				8F51367E1F992B5400ADB823 /* HomeController.swift */,
+				8F5136951F9930CE00ADB823 /* VideoCell.swift */,
+				8F51369A1F99363500ADB823 /* VideoCellMetrics.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -95,6 +114,32 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8F5136971F99312C00ADB823 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F5136981F99314700ADB823 /* UICollectionViewCell+Extensions.swift */,
+				8F51369C1F99492A00ADB823 /* UIColor+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A48CE2F413A0822D9C4AF9F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D40FC7264F2DCA3DBB01963 /* Pods-LBTAYouTubeTutorial.debug.xcconfig */,
+				3D06924254FDFA6AEAE9E1B6 /* Pods-LBTAYouTubeTutorial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6FD11351A6BBBE1BF822E65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58CECCA6AB17498DF9BED13F /* Pods_LBTAYouTubeTutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F51368B1F992B5500ADB823 /* Build configuration list for PBXNativeTarget "LBTAYouTubeTutorial" */;
 			buildPhases = (
+				28D89E474EA33A1170B894FC /* [CP] Check Pods Manifest.lock */,
 				8F5136751F992B5400ADB823 /* Sources */,
 				8F5136761F992B5400ADB823 /* Frameworks */,
 				8F5136771F992B5400ADB823 /* Resources */,
+				A40BC843E519420E4A9E7F42 /* [CP] Embed Pods Frameworks */,
+				A8FA80F0B31747D4C5872FE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,18 +204,71 @@
 			files = (
 				8F5136871F992B5400ADB823 /* LaunchScreen.storyboard in Resources */,
 				8F5136841F992B5400ADB823 /* Assets.xcassets in Resources */,
+				8F5136931F992FC000ADB823 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28D89E474EA33A1170B894FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A40BC843E519420E4A9E7F42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBTAYouTubeTutorial/Pods-LBTAYouTubeTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8FA80F0B31747D4C5872FE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBTAYouTubeTutorial/Pods-LBTAYouTubeTutorial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F5136751F992B5400ADB823 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5136991F99314700ADB823 /* UICollectionViewCell+Extensions.swift in Sources */,
+				8F51369D1F99492A00ADB823 /* UIColor+Extensions.swift in Sources */,
 				8F51367F1F992B5400ADB823 /* HomeController.swift in Sources */,
 				8F51367D1F992B5400ADB823 /* AppDelegate.swift in Sources */,
+				8F5136961F9930CE00ADB823 /* VideoCell.swift in Sources */,
+				8F51369B1F99363500ADB823 /* VideoCellMetrics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,11 +395,12 @@
 		};
 		8F51368C1F992B5500ADB823 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D40FC7264F2DCA3DBB01963 /* Pods-LBTAYouTubeTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DZRUU2Q993;
-				INFOPLIST_FILE = LBTAYouTubeTutorial/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LBTAYouTubeTutorial/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinquisquater.LBTAYouTubeTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,11 +411,12 @@
 		};
 		8F51368D1F992B5500ADB823 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D06924254FDFA6AEAE9E1B6 /* Pods-LBTAYouTubeTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DZRUU2Q993;
-				INFOPLIST_FILE = LBTAYouTubeTutorial/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LBTAYouTubeTutorial/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinquisquater.LBTAYouTubeTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";

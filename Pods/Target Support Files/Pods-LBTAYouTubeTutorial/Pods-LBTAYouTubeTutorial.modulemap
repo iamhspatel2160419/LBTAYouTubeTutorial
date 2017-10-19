@@ -1,0 +1,6 @@
+framework module Pods_LBTAYouTubeTutorial {
+  umbrella header "Pods-LBTAYouTubeTutorial-umbrella.h"
+
+  export *
+  module * { export * }
+}
