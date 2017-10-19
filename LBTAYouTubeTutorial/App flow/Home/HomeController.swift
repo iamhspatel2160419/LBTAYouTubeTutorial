@@ -17,6 +17,7 @@ class HomeController: UICollectionViewController {
     }
     
     private func setupViews() {
+        collectionView?.backgroundColor = .white
         setupNavigationBar()
     }
     
