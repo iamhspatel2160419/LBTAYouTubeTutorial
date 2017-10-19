@@ -35,6 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setupStatusBar(_ application: UIApplication) {
         application.statusBarStyle = .lightContent
         
+        // Exclude iPhone X (status bar height is 44 in Portrait)
+        if UIDevice().userInterfaceIdiom == .phone, UIScreen.main.nativeBounds.height == 2436 {
+            return
+        }
+        
         let statusBarBackgroundView = UIView()
         statusBarBackgroundView.backgroundColor = .redStatusBar
         window?.addSubview(statusBarBackgroundView)
