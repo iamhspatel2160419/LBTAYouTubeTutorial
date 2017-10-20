@@ -12,6 +12,7 @@ extension UIColor {
     static let graySeparatorLine = UIColor(red: 230, green: 230, blue: 230)
     static let redNavigationBar = UIColor(red: 230, green: 32, blue: 31)
     static let redStatusBar = UIColor(red: 194, green: 31, blue: 31)
+    static let darkRedMenuItemUnselected = UIColor(red: 91, green: 14, blue: 13)
     
     // https://medium.com/ios-os-x-development/ios-extend-uicolor-with-custom-colors-93366ae148e6
     convenience init(red: Int, green: Int, blue: Int) {

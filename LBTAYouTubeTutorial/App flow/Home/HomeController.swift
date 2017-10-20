@@ -10,6 +10,11 @@ import UIKit
 
 class HomeController: UICollectionViewController {
     
+    let menuBar: MenuBar = {
+        let menuBar = MenuBar()
+        return menuBar
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -18,7 +23,15 @@ class HomeController: UICollectionViewController {
     
     private func setupViews() {
         collectionView?.backgroundColor = .white
+        collectionView?.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
+        collectionView?.scrollIndicatorInsets = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
         setupNavigationBar()
+        setupMenuBar()
+    }
+    
+    private func setupMenuBar() {
+        view.addSubview(menuBar)
+        menuBar.anchor(view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 50)
     }
     
     private func setupNavigationBar() {

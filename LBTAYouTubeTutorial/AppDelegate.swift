@@ -30,6 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupNavigationBar() {
         UINavigationBar.appearance().barTintColor = .redNavigationBar
+        
+        // Remove the shadow below navigation bar
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
     }
     
     private func setupStatusBar(_ application: UIApplication) {

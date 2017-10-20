@@ -9,7 +9,7 @@
 import UIKit
 import LBTAComponents
 
-class VideoCell: UICollectionViewCell {
+class VideoCell: BaseCell {
     
     let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
@@ -49,12 +49,9 @@ class VideoCell: UICollectionViewCell {
         return view
     }()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
-    private func setupViews() {
+    override func setupViews() {
+        super.setupViews()
+        
         backgroundColor = .white
         
         addSubview(thumbnailImageView)
@@ -119,9 +116,5 @@ class VideoCell: UICollectionViewCell {
                              rightConstant: 0,
                              widthConstant: 0,
                              heightConstant: metrics.separatorLineHeight)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
