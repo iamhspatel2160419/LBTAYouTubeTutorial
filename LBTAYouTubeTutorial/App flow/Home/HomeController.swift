@@ -41,10 +41,26 @@ class HomeController: UICollectionViewController {
         titleLabel.textColor = .white
         titleLabel.font = .systemFont(ofSize: 20)
         navigationItem.titleView = titleLabel
+        
+        let searchIcon = #imageLiteral(resourceName: "search_icon").withRenderingMode(.alwaysOriginal)
+        let searchBarButtonItem = UIBarButtonItem(image: searchIcon, style: .plain, target: self, action: #selector(handleSearch))
+        
+        let moreIcon = #imageLiteral(resourceName: "nav_more_icon").withRenderingMode(.alwaysOriginal)
+        let moreBarButtonItem = UIBarButtonItem(image: moreIcon, style: .plain, target: self, action: #selector(handleMore))
+        
+        navigationItem.rightBarButtonItems = [moreBarButtonItem, searchBarButtonItem]
     }
     
     private func registerCells() {
         collectionView?.register(VideoCell.self, forCellWithReuseIdentifier: VideoCell.reuseIdentifier)
+    }
+    
+    @objc private func handleSearch() {
+        
+    }
+    
+    @objc private func handleMore() {
+        
     }
 }
 
