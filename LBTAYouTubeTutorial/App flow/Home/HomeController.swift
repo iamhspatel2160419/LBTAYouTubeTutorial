@@ -45,10 +45,10 @@ class HomeController: UICollectionViewController {
         let searchIcon = #imageLiteral(resourceName: "search_icon").withRenderingMode(.alwaysOriginal)
         let searchBarButtonItem = UIBarButtonItem(image: searchIcon, style: .plain, target: self, action: #selector(handleSearch))
         
-        let moreIcon = #imageLiteral(resourceName: "nav_more_icon").withRenderingMode(.alwaysOriginal)
-        let moreBarButtonItem = UIBarButtonItem(image: moreIcon, style: .plain, target: self, action: #selector(handleMore))
+        let settingsIcon = #imageLiteral(resourceName: "nav_more_icon").withRenderingMode(.alwaysOriginal)
+        let settingsBarButtonItem = UIBarButtonItem(image: settingsIcon, style: .plain, target: self, action: #selector(handleSettings))
         
-        navigationItem.rightBarButtonItems = [moreBarButtonItem, searchBarButtonItem]
+        navigationItem.rightBarButtonItems = [settingsBarButtonItem, searchBarButtonItem]
     }
     
     private func registerCells() {
@@ -59,7 +59,7 @@ class HomeController: UICollectionViewController {
         
     }
     
-    @objc private func handleMore() {
+    @objc private func handleSettings() {
         
     }
 }
