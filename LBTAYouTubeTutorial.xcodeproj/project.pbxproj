@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F4EEE3C35A31EFE3B37CE64 /* Pods_LBTAYouTubeTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CECCA6AB17498DF9BED13F /* Pods_LBTAYouTubeTutorial.framework */; };
+		8F1191B51F9B4F96002F5EA5 /* SettingsLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1191B41F9B4F96002F5EA5 /* SettingsLauncher.swift */; };
 		8F51367D1F992B5400ADB823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51367C1F992B5400ADB823 /* AppDelegate.swift */; };
 		8F51367F1F992B5400ADB823 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51367E1F992B5400ADB823 /* HomeController.swift */; };
 		8F5136841F992B5400ADB823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5136831F992B5400ADB823 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		1D40FC7264F2DCA3DBB01963 /* Pods-LBTAYouTubeTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTAYouTubeTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBTAYouTubeTutorial/Pods-LBTAYouTubeTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		3D06924254FDFA6AEAE9E1B6 /* Pods-LBTAYouTubeTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTAYouTubeTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBTAYouTubeTutorial/Pods-LBTAYouTubeTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		58CECCA6AB17498DF9BED13F /* Pods_LBTAYouTubeTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBTAYouTubeTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1191B41F9B4F96002F5EA5 /* SettingsLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLauncher.swift; sourceTree = "<group>"; };
 		8F5136791F992B5400ADB823 /* LBTAYouTubeTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBTAYouTubeTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F51367C1F992B5400ADB823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F51367E1F992B5400ADB823 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F1191B31F9B4F83002F5EA5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8F1191B41F9B4F96002F5EA5 /* SettingsLauncher.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		8F5136701F992B5400ADB823 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 				8F51367E1F992B5400ADB823 /* HomeController.swift */,
 				8FEB502C1F9A69B200F74701 /* Menu Bar */,
 				8F51369E1F99534600ADB823 /* Video cells */,
+				8F1191B31F9B4F83002F5EA5 /* Settings */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -302,6 +313,7 @@
 				8F51367D1F992B5400ADB823 /* AppDelegate.swift in Sources */,
 				8FEB50341F9A6FDB00F74701 /* BaseCell.swift in Sources */,
 				8F5136961F9930CE00ADB823 /* VideoCell.swift in Sources */,
+				8F1191B51F9B4F96002F5EA5 /* SettingsLauncher.swift in Sources */,
 				8FEB502E1F9A69BF00F74701 /* MenuBar.swift in Sources */,
 				8FEB50301F9A6F2B00F74701 /* MenuCell.swift in Sources */,
 				8F51369B1F99363500ADB823 /* VideoCellMetrics.swift in Sources */,

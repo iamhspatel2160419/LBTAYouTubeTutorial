@@ -46,7 +46,7 @@ class HomeController: UICollectionViewController {
         let searchBarButtonItem = UIBarButtonItem(image: searchIcon, style: .plain, target: self, action: #selector(handleSearch))
         
         let settingsIcon = #imageLiteral(resourceName: "nav_more_icon").withRenderingMode(.alwaysOriginal)
-        let settingsBarButtonItem = UIBarButtonItem(image: settingsIcon, style: .plain, target: self, action: #selector(handleSettings))
+        let settingsBarButtonItem = UIBarButtonItem(image: settingsIcon, style: .plain, target: self, action: #selector(handleOpenSettings))
         
         navigationItem.rightBarButtonItems = [settingsBarButtonItem, searchBarButtonItem]
     }
@@ -59,8 +59,10 @@ class HomeController: UICollectionViewController {
         
     }
     
-    @objc private func handleSettings() {
-        
+    let settingsLauncher = SettingsLauncher()
+    
+    @objc private func handleOpenSettings() {
+        settingsLauncher.openSettings()
     }
 }
 
@@ -87,6 +89,6 @@ extension HomeController: UICollectionViewDelegateFlowLayout {
     
     override func willRotate(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
         collectionView?.collectionViewLayout.invalidateLayout()
-        self.view.setNeedsDisplay()
+        view.setNeedsDisplay()
     }
 }
