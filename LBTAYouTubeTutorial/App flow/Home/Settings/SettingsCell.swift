@@ -12,8 +12,17 @@ class SettingsCell: BaseCell {
     
     var setting: Setting? {
         didSet {
-            iconImageView.image = setting?.image
+            iconImageView.image = setting?.image.withRenderingMode(.alwaysTemplate)
             nameLabel.text = setting?.name
+            iconImageView.tintColor = .darkGray
+        }
+    }
+    
+    override var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? .darkGray : .white
+            nameLabel.textColor = isHighlighted ? .white : .black
+            iconImageView.tintColor = isHighlighted ? .white : .darkGray
         }
     }
     
