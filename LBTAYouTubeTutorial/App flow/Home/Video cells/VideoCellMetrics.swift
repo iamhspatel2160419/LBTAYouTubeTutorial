@@ -12,10 +12,10 @@ struct VideoCellMetrics {
     
     static func cellHeight(viewWidth: CGFloat) -> CGFloat {
         let thumbnailImageWidth = viewWidth - leftPadding - rightPadding
-        let thumbnailImageheight = thumbnailImageWidth * 9/16
+        let thumbnailImageHeight = thumbnailImageWidth * 9/16
         
         return topPadding
-            + thumbnailImageheight
+            + thumbnailImageHeight
             + spacingBelowVideoImage
             + titleLabelHeight
             + spacingBelowTitleLabel
